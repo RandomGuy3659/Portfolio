@@ -5,28 +5,38 @@
 		<link rel="stylesheet" href="../styles/styles.css">
 		<meta charset="UTF-8">
 		<style>
-			#nav {
-			border: 2px solid black;
-			background-color: #a3a416;
-			height: 50px;
-			line-height: 10px;
+			nav {
+				border: 2px solid black;
+				background-color: #a3a416;
+				height: 50px;
+				line-height: 10px;
 			}
-			li {
-			float: left;
-			padding: 5px;
-			padding-right: 30px;
+			nav ul li {
+				float: left;
+				padding: 5px;
+				padding-right: 30px;
+			}
+			nav ul ul {
+				display: none;
+			}
+			nav ul li:hover > ul {
+				display: block;
 			}
 		</style>
 	</head>
 	<body style="background-color: #dce4ef;">
-		<div id="nav">
+		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact Me</a></li>
-				<li><a href="projects.html">Projects</a></li>
+				<li id="home"><a href="index.html">Home</a></li>
+				<li id="about"><a href="about.html">About</a></li>
+				<li id="contact"><a href="contact.html">Contact Me</a></li>
+				<li id="projects"><a href="projects.html">Projects</a>
+				<ul>
+					<li id="fence"><a href="#">Fencing Game</a></li>
+				</ul>
+				</li>
 			</ul>
-		</div>
+		</nav>
 		<div>
 			<p>Insert info here</p>
 		</div>
